@@ -5,6 +5,7 @@ import Modal from './Components/Modal'
 import ListadoGastos from './Components/ListadoGastos'
 import Filtros from './Components/Filtros'
 import IconoNuevoGasto from './img/nuevo-gasto.svg'
+import Footer from './Components/Footer'
 
 function App() {
 
@@ -136,7 +137,7 @@ function App() {
           setGastoEditar={setGastoEditar}
         />
       )}
-      
+      <Footer/>
     </div>
   )
 }
