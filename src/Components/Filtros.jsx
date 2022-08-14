@@ -12,7 +12,7 @@ const Filtros = ({filtro, setFiltro}) => {
                         setFiltro(e.target.value)
                     }}
                 >
-                    <option value="">-- Todas los Gastos --</option>
+                    <option value="">-- Todos los Gastos --</option>
                     <option value="ahorro">Ahorro</option>
                     <option value="comida">Comida</option>
                     <option value="casa">Casa</option>
