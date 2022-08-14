@@ -201,9 +201,12 @@ header h1 {
     font-size: 2.4rem;
     text-align: center;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .contenido-presupuesto p {
         text-align: left;
+    }
+    .formulario input[type="number"].nuevo-presupuesto{
+        width: 100%;
     }
 }
 .contenido-presupuesto p.negativo,
