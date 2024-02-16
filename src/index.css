@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     --azul: #06347e;
     --rojito: rgb(228, 22, 63);
@@ -8,11 +12,16 @@
     --negro: #000;
 }
 
+html, body, #root{
+    height: 100vh;
+}
+
 body {
     font-size: 1.6rem;
     font-family: "Lato", sans-serif;
     background-color: var(--gris-claro);
 }
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
