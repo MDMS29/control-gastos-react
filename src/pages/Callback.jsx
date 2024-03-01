@@ -1,11 +1,9 @@
 import { useNavigate } from "react-router-dom"
 import { useContext, useEffect, useRef } from "react"
-
-import axios from "axios"
 import { AuthContext } from "../providers/AuthProvider"
+import ConexionWS from "../config/ConexionWS"
 
 const Callback = () => {
-    const serverUrl = import.meta.env.VITE_BACKEND_URL;
     const called = useRef(false)
     const { checkLoginState, loggedIn } = useContext(AuthContext)
     const navigate = useNavigate()
@@ -15,8 +13,10 @@ const Callback = () => {
                 try {
                     if (called.current) return // prevent rerender caused by StrictMode
                     called.current = true
-                    const { data } = await axios.get(`${serverUrl}/usuarios/auth/token${window.location.search}`)
+                    const { data } = await ConexionWS.get(`/usuarios/auth/token${window.location.search}`)
                     console.log('response: ', data)
+
+                    localStorage.setItem(`user_ini_token`, JSON.stringify(data.token) ?? '') 
                     checkLoginState()
                     navigate('/')
                 } catch (err) {

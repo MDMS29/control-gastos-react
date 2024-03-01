@@ -1,0 +1,29 @@
+{
+    "tips": [
+        {
+            "id": 1,
+            "titulo": "Haz un presupuesto mensual",
+            "descripcion": "Planifica tus gastos y asigna cantidades específicas a cada categoría, como alimentos, transporte, entretenimiento, etc."
+        },
+        {
+            "id": 2,
+            "titulo": "Registra tus gastos diarios",
+            "descripcion": "Lleva un registro detallado de tus gastos diarios para tener una mejor idea de en qué estás gastando tu dinero."
+        },
+        {
+            "id": 3,
+            "titulo": "Limita los gastos innecesarios",
+            "descripcion": "Identifica aquellos gastos que no son esenciales y trata de reducirlos o eliminarlos por completo."
+        },
+        {
+            "id": 4,
+            "titulo": "Ahorra regularmente",
+            "descripcion": "Destina una parte de tus ingresos a un fondo de ahorro para emergencias o metas financieras a largo plazo."
+        },
+        {
+            "id": 5,
+            "titulo": "Compara precios antes de comprar",
+            "descripcion": "Investiga y compara precios antes de realizar una compra para asegurarte de obtener la mejor oferta."
+        }
+    ]
+}
